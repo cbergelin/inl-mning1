@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+body{
+    font-family: 'Muli', 'Ubuntu', 'Oswald';
+    width: 100%;
+    
+}
+
+.header{
+    height: 95vh;
+    width: fill;
+    background: url("bilder/header.jpg");
+    background-size: cover;
+    position: relative;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+#header_logo{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.header__meny{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: center;
+    color: black;
+    
+}
+
+.header__link{
+    list-style: none;
+    margin: 0 16px
+    
+}
+
+.header_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header__vi{   
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.header__btn{  
+  height: 40px;
+  width: 100px;
+   
+   border: 1px solid black;
+   border-radius: 20px 20px 20px 20px;
+   transition: all .1s ease;
+   font-weight: bold;
+}
+
+.header__btn:hover{
+    background: #004F9E;
+}
+
+.services{
+    display: grid;
+    height: 60vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #DFDFDF;
+    grid-template-areas:
+    ". . servicerubrik servicerubrik servicerubrik  . ."
+    ". wedesign . host . program ."
+    ". . . . . . .";
+    margin-top: 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.service__rubrik{
+    text-align: center;
+    grid-area: servicerubrik;
+    justify-content: center;
+   
+}
+
+
+.service__btn{
+    border: 2px solid black;
+    border-radius: 20px 20px 20px;
+    height: 7rem;
+    font-weight: bold;
+    transition: all .1s ease;
+    background: white;
+}
+
+.service__btn:hover{
+    transform: scale(1.2);
+    background: black;
+    color: white;
+}
+
+#btn__webDesign{
+    grid-area: wedesign;
+}
+
+#btn__webProgram{
+    grid-area: program;
+}
+
+#btn__webHost{
+    grid-area: host;
+}
+
+.about{
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    ". . . . . . abouthead abouthead abouthead abouthead . . . . . ."
+    ". ceo ceo ceo ceo . cfo cfo cfo cfo . hr hr hr hr ."
+    ". ceo ceo ceo ceo . cfo cfo cfo cfo . hr hr hr hr ."
+    ". ceo ceo ceo ceo . cfo cfo cfo cfo . hr hr hr hr ."
+    ". ceo ceo ceo ceo . cfo cfo cfo cfo . hr hr hr hr ."
+    ". ceo ceo ceo ceo . cfo cfo cfo cfo . hr hr hr hr ."
+    ". ceo ceo ceo ceo . cfo cfo cfo cfo . hr hr hr hr ."
+    ". . . . . . . . . . . . . . . .";
+}
+
+.about__rubrik{
+    grid-area: abouthead;
+    text-align: center;
+}
+
+.about__container{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    border: 1px solid black;
+    grid-template-areas: 
+    "aboutimg"
+    "aboutimg"
+    "aboutimg"
+    "aboutimg"
+    "aboutimg"
+    "aboutimg"
+    "aboutimg"
+    "aboutimg"
+    "abouttxt"
+    "aboutsocial";
+    box-shadow: 3px 3px 5px 6px #ccc;
+
+}
+
+#ceo{
+    grid-area: ceo;
+}
+
+#cfo{
+    grid-area: cfo;
+}
+
+#hr{
+    grid-area: hr;
+}
+
+.about__img{
+    grid-area: aboutimg;
+    width: 100%;
+    
+    border-bottom: 1px solid black;
+}
+
+
+
+.about__text{
+    grid-area: abouttxt;
+    text-align: left;
+}
+
+.about__social{
+    grid-area: aboutsocial;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.about__social i{
+    font-size: 2rem;
+}
+
+.contact{
+    display: grid;
+    height: 95vh;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+    ". . . . . . . . . ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". contactinfo contactinfo contactinfo . contactform contactform contactform contactform ."
+    ". . . . . . . . . .";
+}
+
+.contact__info{
+    grid-area: contactinfo;
+}
+
+.contact__form{
+    grid-area: contactform;
+}
+
+.contact__msg{
+    width: 500px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "company company . footmeny footsocial";
+    margin: 50px;
+    
+}
+
+.footer__company{
+    grid-area: company;
+}
+
+
+
+
+.footer__meny{
+    grid-area: footmeny;
+    list-style: none;
+    font-weight: bold;
+}
+
+.footer__social{
+    grid-area: footsocial;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 769px){  /*  Media query för att göra sidan responsiv för skärmar mindre än 769px */
+    #header_logo{
+        position: relative;
+        height: 50px;
+        width: 50px;
+    }
+
+    .header__link{
+        list-style: none;
+        margin: 0 10px;
+        font-size: 15px;
+        
+    }
+
+    .header{
+        height: 95vh;
+        width: fill;
+        background: url("bilder/headermobile.jpg");
+        background-size: cover;
+        position: relative;
+        
+        
+    }
+    
+    .service__btn{
+        width: 105px;
+    }
+
+    .about__container{
+        height: 140px;
+    }
+
+    .about__text{
+        font-size: .7rem;
+    }
+
+    .about__social i{
+        font-size: 1rem;
+    }
+
+    .contact__msg{
+        width: 150px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr) ;
+        grid-template-areas: 
+        "company company"
+        "footmeny footsocial";
+        margin: 50px;
+        
+    }
+    
+    .footer__company{
+        grid-area: company;
+    }
+    
+    
+    
+    
+    .footer__meny{
+        grid-area: footmeny;
+        list-style: none;
+    }
+    
+    .footer__social{
+        grid-area: footsocial;
+        list-style: none;
+    }
+}
