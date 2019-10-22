@@ -275,8 +275,8 @@ footer {
     font-weight: bold;
 }
 
-
-@media screen and (max-width: 769px){  /*  Media query för att göra sidan responsiv för skärmar mindre än 769px */
+/*  Media query för att göra sidan responsiv för skärmar mindre än 769px */
+@media screen and (max-width: 769px){  
     #header_logo{
         position: relative;
         height: 50px;
