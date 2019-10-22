@@ -215,7 +215,10 @@ body{
 
 .contact{
     display: grid;
-    height: 95vh;
+    height: 60vh;
+    background: #DFDFDF;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-template-areas: 
@@ -301,6 +304,10 @@ footer {
         width: 105px;
     }
 
+    .about{
+        height: 40vh;
+    }
+
     .about__container{
         height: 140px;
     }
@@ -311,6 +318,10 @@ footer {
 
     .about__social i{
         font-size: 1rem;
+    }
+
+    .contact{
+        height: 95vh;
     }
 
     .contact__msg{
